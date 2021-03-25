@@ -1,5 +1,7 @@
 body {
     background-color: crimson;
+    /* animation: blink 10s infinite;
+    -webkit-animation: blink 10s infinite;  */
 }
 
 .company-label {
@@ -21,8 +23,7 @@ body {
 
 
 .card {
-    animation: blink 10s infinite;
-    -webkit-animation: blink 10s infinite; 
+
 }
 
 
