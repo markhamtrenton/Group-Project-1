@@ -8,4 +8,9 @@ body {
 
 .input-group-text {
     min-width: 170px;
+    /* font-family: 'Pangolin', cursive; */
+}
+
+#createCompany {
+    /* font-family: 'Chango', cursive; */
 }
