@@ -8,9 +8,63 @@ body {
 
 .input-group-text {
     min-width: 170px;
-    /* font-family: 'Pangolin', cursive; */
+    font-family: 'Pangolin', cursive;
 }
 
 #createCompany {
-    /* font-family: 'Chango', cursive; */
+    font-family: 'Chango', cursive;
+}
+
+.card-header {
+    font-family: 'Chango', cursive;
+}
+
+
+.card {
+    animation: blink 10s infinite;
+    -webkit-animation: blink 10s infinite; 
+}
+
+
+
+@keyframes blink {
+    15% {
+        background:red
+    }
+    30% {
+        background:yellowgreen
+    }
+    42% {
+        background:violet
+    }
+    58% {
+        background:plum
+    }
+    85% {
+        background:orangered
+    }
+    100% {
+        background:blue
+    }
+}
+
+@-webkit-keyframes blink {
+    15% {
+        background:red
+    }
+    30% {
+        background:yellowgreen
+    }
+    42% {
+        background:violet
+    }
+    58% {
+        background:plum
+    }
+    85% {
+        background:orangered
+    }
+    100% {
+        background:blue
+    }
 }
