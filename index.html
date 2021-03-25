@@ -11,81 +11,62 @@
     </head>
     <body>
         <section id="companyRegisterPage">
-            <div class="container">
-                <h1>Enter your company information to look for projects!</h1>
-                <div id="registrationForm">
-                    <div class="row pt-3">
-                        <div class="col-sm-12 col-md-6">
-                            <div class="input-group input-group-sm mb-3">
+            <!-- <div class="container pt-3 pb-3 d-flex align-items-center justify-content-center"> -->
+            <div class="container pt-3 pb-3">
+                <div class="card">
+                    <div class="card-header text-center">
+                        <h2>Enter your company information to look for projects!</h2>
+                    </div>
+                    <div id="registrationForm">
+                        <div class="pt-3 px-2 col-sm-12 col-md-6 mx-auto">
+                            <div class="input-group input-group-md mb-3">
                                 <span class="input-group-text" for="companyNameEntry">Company Name</span>
                                 <input class="form-control" id="companyNameEntry" name="companyNameEntry" type="text" minlength="2">
                             </div>
                         </div>
-                        <div class="col-sm-6"></div>
-                    </div>
-                    <div class="row pt-3">
-                        <div class="col-sm-12 col-md-6">
-                            <div class="input-group input-group-sm mb-3">
-                                <span class="input-group-text" for="employeeNumberEntry">Number of Employees</span>
-                                <input class="form-control" id="employeeNumberEntry" name="employeeNumberEntry" type="text" minlength="2">
-                            </div>
+                        <div class="pt-3 px-2 col-sm-12 col-md-6 mx-auto">
+                                <div class="input-group input-group-md mb-3">
+                                    <span class="input-group-text" for="employeeNumberEntry"># of Employees</span>
+                                    <input class="form-control" id="employeeNumberEntry" name="employeeNumberEntry" type="text" minlength="2">
+                                </div>
                         </div>
-                        <div class="col-sm-6"></div>
-                    </div>
-                    <div class="row pt-3">
-                        <div class="col-sm-12 col-md-6">
-                            <div class="input-group input-group-sm mb-3">
-                                <span class="input-group-text" for="companyEmailEntry">Company Email</span>
-                                <input class="form-control" id="companyEmailEntry" name="companyEmailEntry" type="text" minlength="2">
-                            </div>
+                        <div class="pt-3 px-2 col-sm-12 col-md-6 mx-auto">
+                                <div class="input-group input-group-md mb-3">
+                                    <span class="input-group-text" for="companyEmailEntry">Company Email</span>
+                                    <input class="form-control" id="companyEmailEntry" name="companyEmailEntry" type="text" minlength="2">
+                                </div>
                         </div>
-                        <div class="col-sm-6"></div>
-                    </div>
-                    <div class="row pt-3">
-                        <div class="col-sm-12 col-md-6">
-                            <div class="input-group input-group-sm mb-3">
-                                <span class="input-group-text" for="companyPhoneEntry">Company Phone</span>
-                                <input class="form-control" id="companyPhoneEntry" name="companyPhoneEntry" type="text" minlength="2">
-                            </div>
+                        <div class="pt-3 px-2 col-sm-12 col-md-6 mx-auto">
+                                <div class="input-group input-group-md mb-3">
+                                    <span class="input-group-text" for="companyPhoneEntry">Company Phone</span>
+                                    <input class="form-control" id="companyPhoneEntry" name="companyPhoneEntry" type="text" minlength="2">
+                                </div>
                         </div>
-                        <div class="col-sm-6"></div>
-                    </div>
-                    <div class="row pt-3">
-                        <div class="col-sm-12 col-md-6">
-                            <div class="input-group input-group-sm mb-3">
-                                <span class="input-group-text" for="companyCityEntry">Company City</span>
-                                <input class="form-control" id="companyCityEntry" name="companyCityEntry" type="text" minlength="2">
-                            </div>
+                        <div class="pt-3 px-2 col-sm-12 col-md-6 mx-auto">
+                                <div class="input-group input-group-md mb-3">
+                                    <span class="input-group-text" for="companyCityEntry">Company City</span>
+                                    <input class="form-control" id="companyCityEntry" name="companyCityEntry" type="text" minlength="2">
+                                </div>
                         </div>
-                        <div class="col-sm-6"></div>
-                    </div>
-                    <div class="row pt-3">
-                        <div class="col-sm-12 col-md-6">
-                            <div class="input-group input-group-sm mb-3">
+                        <div class="pt-3 px-2 col-sm-12 col-md-6 mx-auto">
+                            <div class="input-group input-group-md mb-3">
                                 <span class="input-group-text" for="companyStateEntry">Company State</span>
                                 <input class="form-control" id="companyStateEntry" name="companyStateEntry" type="text" minlength="2">
                             </div>
                         </div>
-                        <div class="col-sm-6"></div>
-                    </div>
-                    <div class="row pt-3">
-                        <div class="col-sm-12 col-md-6">
-                            <div class="input-group input-group-sm mb-3">
+                        <div class="pt-3 px-2 col-sm-12 col-md-6 mx-auto">
+                            <div class="input-group input-group-md mb-3">
                                 <span class="input-group-text" for="companyProjectManagerEntry">Project Manager</span>
                                 <input class="form-control" id="companyProjectManagerEntry" name="companyProjectManagerEntry" type="text" minlength="2">
                             </div>
                         </div>
-                        <div class="col-sm-6"></div>
-                    </div>
-                    <div class="row pt-3">
-                        <div class="col-sm-12 col-md-6">
-                            <div class="input-group input-group-sm mb-3">
+                        <div class="pt-3 px-2 col-sm-12 col-md-6 mx-auto">
+                            <div class="input-group input-group-md mb-3">
                                 <div class="d-grid col-6 mx-auto">
                                     <button class="btn btn-danger" type="button" id="createCompany">Register company!</button>
-                            </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-sm-6"></div>
                     </div>
                 </div>
             </div>
