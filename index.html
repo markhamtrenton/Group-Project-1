@@ -6,28 +6,88 @@
         <title>OddJobs</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <section id="companyRegisterPage">
-            <h1>Enter your company information to look for projects!</h1>
-            <div id="registrationForm">
-                <label for="companyNameEntry">Company Name</label></br>
-                <input id="companyNameEntry" name="companyNameEntry" type="text" minlength="2"></br>
-                <label for="employeeNumberEntry">Number of Employees</label></br>
-                <input id="employeeNumberEntry" name="employeeNumberEntry" type="text" minlength="2"></br>
-                <label for="companyEmailEntry">Email</label></br>
-                <input id="companyEmailEntry" name="companyEmailEntry" type="text" minlength="2"></br>
-                <label for="companyPhoneEntry">Phone Number</label></br>
-                <input id="companyPhoneEntry" name="companyPhoneEntry" type="text" minlength="2"></br>
-                <label for="companyCityEntry">City</label></br>
-                <input id="companyCityEntry" name="companyCityEntry" type="text" minlength="2"></br>
-                <label for="companyStateEntry">State</label></br>
-                <input id="companyStateEntry" name="companyStateEntry" type="text" minlength="2"></br>
-                <label for="companyProjectManagerEntry">Project Manager</label></br>
-                <input id="companyProjectManagerEntry" name="companyProjectManagerEntry" type="text" minlength="2"></br>
-                <button type="button" id="createCompany">Register company!</button>
+            <div class="container">
+                <h1>Enter your company information to look for projects!</h1>
+                <div id="registrationForm">
+                    <div class="row pt-3">
+                        <div class="col-sm-12 col-md-6">
+                            <div class="input-group input-group-sm mb-3">
+                                <span class="input-group-text" for="companyNameEntry">Company Name</span>
+                                <input class="form-control" id="companyNameEntry" name="companyNameEntry" type="text" minlength="2">
+                            </div>
+                        </div>
+                        <div class="col-sm-6"></div>
+                    </div>
+                    <div class="row pt-3">
+                        <div class="col-sm-12 col-md-6">
+                            <div class="input-group input-group-sm mb-3">
+                                <span class="input-group-text" for="employeeNumberEntry">Number of Employees</span>
+                                <input class="form-control" id="employeeNumberEntry" name="employeeNumberEntry" type="text" minlength="2">
+                            </div>
+                        </div>
+                        <div class="col-sm-6"></div>
+                    </div>
+                    <div class="row pt-3">
+                        <div class="col-sm-12 col-md-6">
+                            <div class="input-group input-group-sm mb-3">
+                                <span class="input-group-text" for="companyEmailEntry">Company Email</span>
+                                <input class="form-control" id="companyEmailEntry" name="companyEmailEntry" type="text" minlength="2">
+                            </div>
+                        </div>
+                        <div class="col-sm-6"></div>
+                    </div>
+                    <div class="row pt-3">
+                        <div class="col-sm-12 col-md-6">
+                            <div class="input-group input-group-sm mb-3">
+                                <span class="input-group-text" for="companyPhoneEntry">Company Phone</span>
+                                <input class="form-control" id="companyPhoneEntry" name="companyPhoneEntry" type="text" minlength="2">
+                            </div>
+                        </div>
+                        <div class="col-sm-6"></div>
+                    </div>
+                    <div class="row pt-3">
+                        <div class="col-sm-12 col-md-6">
+                            <div class="input-group input-group-sm mb-3">
+                                <span class="input-group-text" for="companyCityEntry">Company City</span>
+                                <input class="form-control" id="companyCityEntry" name="companyCityEntry" type="text" minlength="2">
+                            </div>
+                        </div>
+                        <div class="col-sm-6"></div>
+                    </div>
+                    <div class="row pt-3">
+                        <div class="col-sm-12 col-md-6">
+                            <div class="input-group input-group-sm mb-3">
+                                <span class="input-group-text" for="companyStateEntry">Company State</span>
+                                <input class="form-control" id="companyStateEntry" name="companyStateEntry" type="text" minlength="2">
+                            </div>
+                        </div>
+                        <div class="col-sm-6"></div>
+                    </div>
+                    <div class="row pt-3">
+                        <div class="col-sm-12 col-md-6">
+                            <div class="input-group input-group-sm mb-3">
+                                <span class="input-group-text" for="companyProjectManagerEntry">Project Manager</span>
+                                <input class="form-control" id="companyProjectManagerEntry" name="companyProjectManagerEntry" type="text" minlength="2">
+                            </div>
+                        </div>
+                        <div class="col-sm-6"></div>
+                    </div>
+                    <div class="row pt-3">
+                        <div class="col-sm-12 col-md-6">
+                            <div class="input-group input-group-sm mb-3">
+                                <div class="d-grid col-6 mx-auto">
+                                    <button class="btn btn-danger" type="button" id="createCompany">Register company!</button>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6"></div>
+                    </div>
+                </div>
             </div>
         </section>
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
