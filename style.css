@@ -5,17 +5,15 @@ body {
     background-size: cover; 
     background-position: center;
     background-repeat: no-repeat;
-    transition: 20s;
+    transition: 5s;
 
     animation-name: animate;
     animation-direction:  alternate-reverse;
-    animation-duration: 60s;
+    animation-duration: 30s;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
     animation-play-state: running;
     animation-timing-function: ease-in-out;
-    /* animation: blink 10s infinite;
-    -webkit-animation: blink 10s infinite;  */
 }
 
 .company-label {
@@ -28,11 +26,12 @@ body {
 }
 
 #createCompany {
-    font-family: 'Chango', cursive;
+    font-family: 'Permanent Marker', cursive;
+    /* font-family: 'Chango', cursive; */
 }
 
 .card-header {
-    font-family: 'Chango', cursive;
+    /* font-family: 'Permanent Marker', cursive; */
 }
 
 
@@ -60,8 +59,14 @@ body {
 
 }
 
+.box-header {
+    padding-top: 200px;
+    text-align: center;
+}
 
-
+.box-header h1 {
+    text-decoration: underline;
+}
 
 
 
