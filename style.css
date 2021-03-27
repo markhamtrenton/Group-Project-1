@@ -1,5 +1,19 @@
 body {
-    background-color: crimson;
+    height: 100vh;
+    width: 100%;   
+    background-image: url('');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 20s;
+
+    animation-name: animate;
+    animation-direction:  alternate-reverse;
+    animation-duration: 60s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
     /* animation: blink 10s infinite;
     -webkit-animation: blink 10s infinite;  */
 }
@@ -25,6 +39,44 @@ body {
 .card {
 
 }
+
+
+@keyframes animate {
+    0%{
+        background-image: url('backgroundimg/blueprints-894779_1920.jpg');
+    }20%{
+        background-image: url('backgroundimg/luxury-home-2409518_1920.jpg');
+    }40%{
+        background-image: url('backgroundimg/luxury-home-2412145_1920.jpg');
+    }60%{
+        background-image: url('backgroundimg/scaffold-1207389_1920.jpg');
+    }80%{
+        background-image: url('backgroundimg/new-home-1540875_1920.jpg');
+    }100%{
+        background-image: url('backgroundimg/housebuilding-3370969_1920.jpg');
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
