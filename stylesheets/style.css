@@ -42,46 +42,28 @@ body {
 
 @keyframes animate {
     0%{
-        background-image: url('/assets/images/backgroundimg/blueprints-894779_1920.jpg');
+        background-image: url('backgroundimg/blueprints-894779_1920.jpg');
     }20%{
-        background-image: url('/assets/images/backgroundimg/luxury-home-2409518_1920.jpg');
+        background-image: url('backgroundimg/luxury-home-2409518_1920.jpg');
     }40%{
-        background-image: url('/assets/images/backgroundimg/luxury-home-2412145_1920.jpg');
+        background-image: url('backgroundimg/luxury-home-2412145_1920.jpg');
     }60%{
-        background-image: url('/assets/images/backgroundimg/scaffold-1207389_1920.jpg');
+        background-image: url('backgroundimg/scaffold-1207389_1920.jpg');
     }80%{
-        background-image: url('/assets/images/backgroundimg/new-home-1540875_1920.jpg');
+        background-image: url('backgroundimg/new-home-1540875_1920.jpg');
     }100%{
-        background-image: url('/assets/images/backgroundimg/housebuilding-3370969_1920.jpg');
+        background-image: url('backgroundimg/housebuilding-3370969_1920.jpg');
     }
+
+
+
 }
 
-.dropdown {
-    text-align: center;
-    padding-top: 400px;
+.btn- {
+    float: right;
 }
 
-.dropdown-menu {
-    background-color: rgba(83, 83, 83, 0.993);
-}
 
-.dropdown-item {
-    text-align: center;
-    width: 415px;
-}
-
-.dropdown-item h2 {
-    color: ivory;
-}
-
-.container-flex h1 {
-    text-align: center;
-    padding-top: 100px;
-}
-
-.flex-column {
-    text-align: center;
-}
 
 
 
