@@ -39,6 +39,22 @@ body {
 
 }
 
+/* .construction-image {
+    clip-path: circle(42%);
+    height:400px;
+    width:400px;
+    margin: auto 0;
+} */
+
+.construction-image {
+    border-radius: 20px;
+    /* border-collapse: separate;
+    overflow: hidden;
+    perspective: 1px; */
+    /* padding:50px; */
+    width:40%;
+    
+}
 
 @keyframes animate {
     0%{
@@ -58,7 +74,7 @@ body {
 
 .dropdown {
     text-align: center;
-    padding-top: 400px;
+    padding-top: 250px;
 }
 
 .dropdown-menu {
@@ -82,6 +98,7 @@ body {
 .flex-column {
     text-align: center;
 }
+
 
 
 
