@@ -103,7 +103,7 @@ const item = [
 { id:"11", name: 'Apartment Complex', client: 'Ralph McGill', cost: '$5.2 million', description: 'Building new luxury style apartment complex in the heart of Atlanta.', location: 'Atlanta', time: '2 years', documentUrl: '' },
 { id:"12", name: 'Paving Parking', client: 'Dogecoin', cost: '$25,000', description: 'Concrete is cracking and has multiple potholes. Looking to fix these multiple issues in the next month, before the season gets busy.', location: 'San Diego', time: '1.5 weeks', documentUrl: '' },
 { id:"13", name: 'Capital Repairs', client: 'Texas Government', cost: '$120,000', description: 'After the multiple tornados and devasting weather that came through Austin this past two weeks. Multiple government buildings were damaged in the events. Looking to fix multiple windows and sections of the buildings had trees that fell on them. Help needed ASAP!', location: 'Austin', time: '2 months', documentUrl: '' },
-{ id:"14", name: 'Installing Metal Fencing', client: 'Blue Cheese Ranch', cost: '$15,000', description: 'Installing fencing around newly purchased 2 acre pastore.', location: 'Omaha', time: '3 Months', documentUrl: '3 week' },
+{ id:"14", name: 'Installing Metal Fencing', client: 'Blue Cheese Ranch', cost: '$15,000', description: 'Installing fencing around newly purchased 2 acre pastore.', location: 'Omaha', time: '3 Months', documentUrl: '' },
 ]
 
 
