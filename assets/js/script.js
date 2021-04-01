@@ -14,7 +14,7 @@ async function submitNewCompany()
     //save company values to local storage
     await saveCompanyValues(true);
     //load company.html
-    window.location.href = "\\Group-Project-1\\company.html";
+    window.location.href = "./company.html";
 }
 
 async function submitExistingCompany()
@@ -22,7 +22,7 @@ async function submitExistingCompany()
     //update company values in local storage
     await saveCompanyValues(false);
     //load home html
-    window.location.href = "\\Group-Project-1\\home.html";
+    window.location.href = "./home.html";
 }
 
 async function saveCompanyValues(getImgURL)
@@ -98,7 +98,11 @@ const item = [
 { name: 'Metropolitan duplex', client: 'Tony Stark', cost: '$15,000', description: 'Roof repair for recent hale storm damage.', location: 'Miami', time: '3 Days', documentUrl: '' },
 { name: 'Back Deck Construction', client: 'Rob Smith', cost: '$8,000', description: 'Splurging on a new back deck with full gaming station, and robot.', location: 'Cumming', time: '1 Day', documentUrl: '' },
 { name: 'Kitchen Renovation', client: 'Karen Candle', cost: '$10,000', description: 'Updating kitchen with modern ammenities. ', location: 'Duluth', time: '2 weeks', documentUrl: '' },
-{ name: 'Window Installation', client: 'Jim Bean', cost: '$3,000', description: 'Installing windows into a brand new house,looking for a small local exterior company.', location: 'Memphis', time: '3 weeks', documentUrl: '' }
+{ name: 'Window Installation', client: 'Jim Bean', cost: '$3,000', description: 'Installing windows into a brand new house,looking for a small local exterior company.', location: 'Memphis', time: '3 weeks', documentUrl: '' },
+{ name: 'Renovating Pool', client: 'Tuscany', cost: '$50,000', description: 'Renovating Apartment complex pool for the summer. Want to make it more modern and appealing for our current and future residents.', location: 'Charlotte', time: '3 Months', documentUrl: '' },
+{ name: 'Apartment Complex', client: 'Ralph McGill', cost: '$5.2 million', description: 'Building new luxury style apartment complex in the heart of Atlanta.', location: 'Atlanta', time: '2 years', documentUrl: '' },
+{ name: 'Paving Parking', client: 'Dogecoin', cost: '$25,000', description: 'Concreate is cracking and has multiple potholes. Looking to fix these multiple issues in the next month, before the season gets busy.', location: 'San Diego', time: '1.5 weeks', documentUrl: '' },
+
 ]
 // For-of function for selecting an object from array based on search criteria
 // function for (let index = 0; index < array.length; index++) {
