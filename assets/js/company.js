@@ -1,3 +1,5 @@
+//companyExists();
+
 //access "view projects" button #continue-projects
 $('#continue-projects').click(function(){
     onViewProjects();
