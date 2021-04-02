@@ -1,7 +1,7 @@
-$(".clickable-row").click(function() {
+/*$(".clickable-row").click(function() {
     window.location = $(this).data("href");
 });
-
+*/
 const projectsList = [
     { id:"1", name: 'Roof Replacement', client: 'Honda', cost: '$120,000', description: 'Roof needs to get replaced, as it is worn and starting to leak into the main manufacturing area.', location: 'Dallas', time: '1 month', documentUrl: '' },
     { id:"2", name: 'Flood Renovations', client: 'Jenn Cook', cost: '$35,000', description: 'Repairs to basement and garage areas for flooding.', location: 'Los Angeles', time: '2 weeks', documentUrl: '' },
@@ -19,6 +19,38 @@ const projectsList = [
     { id:"14", name: 'Installing Metal Fencing', client: 'Blue Cheese Ranch', cost: '$15,000', description: 'Installing fencing around newly purchased 2 acre pastore.', location: 'Omaha', time: '3 Months', documentUrl: '' },
     ]
 
-for (const project of projectsList) {
-    
-}   
+
+
+const table = $('#projectsTableBody');
+
+function createAllProjects()
+{
+    //loop through project list
+    for (const project of projectsList) {
+        createProject(project);
+    }   
+}
+
+function createProject(projectObj)
+{
+    var projectRecord = $('<tr></tr>');
+    projectRecord.append(`<td>${projectObj.name}</td>`);
+    projectRecord.append(`<td>${projectObj.client}</td>`);
+    projectRecord.append(`<td>${projectObj.cost}</td>`);
+    projectRecord.append(`<td>${projectObj.location}</td>`);
+    projectRecord.append(`<td>${projectObj.time}</td>`);
+    projectRecord.append(`<td><button type="button" id="${projectObj.id}" class="btn btn-primary viewProjectButton">View Details</button></td>`);
+    table.append(projectRecord);
+}
+
+createAllProjects();
+
+function viewProject(id){
+    localStorage.setItem("projectToLoad", id);
+    window.location.href = "./project.html";
+};
+
+$(".viewProjectButton").click(function(){
+    const id = $(this).attr("id");
+    viewProject(id);
+});

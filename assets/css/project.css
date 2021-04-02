@@ -1,3 +1,21 @@
 body {
     background-color: whitesmoke;
 }
+
+/* Create section style */
+.section-text {
+    text-align: left;
+
+}
+
+.section-underline {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: #d9534f;
+    margin: 10px auto;
+}
+
+.about-border {
+
+}
