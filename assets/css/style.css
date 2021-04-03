@@ -1,7 +1,8 @@
 body {
     height: 100vh;
     width: 100%;   
-    background-image: url('');
+    background-image: url('../images/backgroundimg/house-1158139_1920.jpg');
+    /* OH BOY */
     background-size: cover; 
     background-position: center;
     background-repeat: no-repeat;
@@ -64,7 +65,11 @@ body {
 
 
 
-
+#companyLogo {
+    height: 100px;
+    width: 120px;
+    border-radius: 5px;
+}
 
 
 

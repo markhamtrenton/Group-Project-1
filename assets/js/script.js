@@ -62,6 +62,9 @@ function loadCompanyValues()
     headerText.val(companyObj.header);
     submitCompanyInfo.val(companyObj.submitCompanyInfo);
 
+    $('#companyLogo').attr("src",companyObj.imgURL);
+
+    $('#companyLogo').show();
 }
 
 
