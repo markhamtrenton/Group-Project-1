@@ -46,6 +46,28 @@ async function saveCompanyValues(getImgURL)
     localStorage.setItem('companyValues', JSON.stringify(companyValues));
 };
 
+function loadCompanyValues()
+{
+    //load companyobj from local storage
+    var companyObj = JSON.parse(localStorage.getItem('companyValues'));
+    
+    //get inputs and set val() with companyObj properties
+    companyName.val(companyObj.name);
+    employeeNumber.val(companyObj.employeeNumber);
+    companyEmail.val(companyObj.email);
+    companyPhone.val(companyObj.phone);
+    companyCity.val(companyObj.city);
+    companyState.val(companyObj.state);
+    companyProjectManager.val(companyObj.projectManager);
+    headerText.val(companyObj.header);
+    submitCompanyInfo.val(companyObj.submitCompanyInfo);
+
+}
+
+
+
+
+
 function companyExists()
 {
     //check for local storage
@@ -56,6 +78,8 @@ function companyExists()
         submitCompanyInfo.click(submitNewCompany);
     }else
     {
+        //load company information
+        loadCompanyValues();
         updatePageDetails("Update your company information.","Submit Updated Info");
         submitCompanyInfo.click(submitExistingCompany);
     }
@@ -127,11 +151,16 @@ const item = [
 
 //assign 
 
-function selectProject()
-{
-    for (const value of item) {
-        item.filter(res => res.cost.condition > 0).map(ele=>ele.companyValues) 
-       window.log(value);
+// function selectProject()
+// {
+//     for (const value of item) {
+//         item.filter(res => res.cost.condition > 0).map(ele=>ele.companyValues) 
+//        window.log(value);
         
-    }
-}
+//     }
+// }
+
+// function show() 
+// {
+//     document.getElementById("write").innerHTML = ;
+// }

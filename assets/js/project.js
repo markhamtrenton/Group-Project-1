@@ -1,5 +1,12 @@
 //url is a string pointing to our API.
 //data is an object in JSON notation, NOT a string. 
+const bidAmountPrice = $('#bidAmountInput');
+const bidNumberEmployees = $('#dedicatedEmployeesInput');
+const bidStartDate =  $('#startDateInput');
+const bidProjectManager = $('#projectManagerInput');
+const submitBidButton = $('#submitBidButton');
+
+
 async function submitBid(){
     //setup post data arguments
     const submitURL = 'http://oddjobs.ga/projects/create'
@@ -22,9 +29,63 @@ async function submitBid(){
     bidObject.projectID = projectID;
     //send to API
     await postData(submitURL, bidObject);
+
+    //check for an allBidObjects in local storage
+    var allBidObjects = JSON.parse(localStorage.getItem("allBidObjects"));
+
+    //check if allbidobjects is valid
+    if(allBidObjects)
+    {
+      //set new current bid
+      allBidObjects["projectID" + projectID] = bidObject;
+      //write updated allbidobjects to local storage
+      localStorage.setItem("allBidObjects", JSON.stringify(allBidObjects));
+    }else
+    {
+      //setup new all bids objects
+      var newAllBidObjects = {};
+
+      //set new current bid
+      newAllBidObjects["projectID" + projectID] = bidObject;
+      //write new allbidobjects to local storage
+      localStorage.setItem("allBidObjects", JSON.stringify(allBidObjects));
+    }
 };
 
-$('#submitBidButton').click(submitBid);
+function loadCurrentBidObject()
+{
+  //get all bid objects from local storage
+  var allBidObjects = JSON.parse(localStorage.getItem("allBidObjects"));
+  //check if allbidobjects is valid
+  if(allBidObjects)
+  {
+    //get project id from local storage
+    const projectID = localStorage.getItem('projectToLoad');
+    //check for bid on current project
+    if(allBidObjects["projectID" + projectID] !== undefined)
+    {
+      //
+      var currentBidObject = allBidObjects["projectID" + projectID];
+      
+      bidStartDate.val(currentBidObject.estimatedStartDate);
+      bidNumberEmployees.val(currentBidObject.dedicatedEmployees);
+      bidProjectManager.val(currentBidObject.projectManager);
+      bidAmountPrice.val(currentBidObject.bidAmount);
+      
+      
+      // bidObject01
+
+      //after loading local storage values into dom disable fields
+      bidStartDate.attr("disabled", true); 
+      bidNumberEmployees.attr("disabled", true);
+      bidProjectManager.attr("disabled", true);
+      bidAmountPrice.attr("disabled", true);
+      submitBidButton.attr("disabled", true);  //this 5th attr is for the submit button
+    }
+  }
+}
+
+submitBidButton.click(submitBid);
 
 /*
 {
@@ -106,8 +167,8 @@ async function appendProjectData(projectID){
 function loadPage(){
     const projectID = localStorage.getItem('projectToLoad');
     appendProjectData(projectID);
+    loadCurrentBidObject();
 };
 
 loadPage();
 checkValidCompany();
-
