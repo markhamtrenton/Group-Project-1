@@ -9,7 +9,7 @@ const submitBidButton = $('#submitBidButton');
 
 async function submitBid(){
     //setup post data arguments
-    const submitURL = 'http://oddjobs.ga/projects/create'
+    const submitURL = 'https://oddjobs.ga/projects/create'
     let bidObject = {};
     //grab values from fields
     let startDateInput = $('#startDateInput');
@@ -150,7 +150,7 @@ async function appendProjectData(projectID){
     $('#projectInformation').append(`<li>Project Location: ${projectObj.location}</li>`);
     $('#projectInformation').append(`<li>Estimated Time to Complete: ${projectObj.time}</li>`);
     $('#projectInformation').append(`<li>Description of Project: <p> ${projectObj.description}</p></li>`);
-    const viewAllURL = 'http://oddjobs.ga/projects/viewall';
+    const viewAllURL = 'https://oddjobs.ga/projects/viewall';
     const viewAllData = await postData(viewAllURL);
     for (bids of viewAllData.bids){
         if (bids.projectID === projectID){

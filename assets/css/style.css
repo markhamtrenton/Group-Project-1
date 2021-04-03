@@ -56,6 +56,21 @@ body {
     
 }
 
+
+#profilepicf {
+    font-family: 'Permanent Marker', cursive;
+}
+
+
+
+
+
+
+
+
+
+
+
 @keyframes animate {
     0%{
         background-image: url('../images/backgroundimg/house-1158139_1920.jpg');
