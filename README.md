@@ -2,9 +2,9 @@ OddJobs
 Description
 Come and find all type of Odd Jobs around your local area. Submit a bid and stay active. App targets construction companies or small crews looking to find jobs or build reputation helping other businesses in the local area. 
 
-Repo:
+Repo: https://github.com/markhamtrenton/Group-Project-1.git
 
-Live site:
+Live site: https://markhamtrenton.github.io/Group-Project-1/
 
 Screenshots
 deploy link: ![image](https://user-images.githubusercontent.com/78390228/113479711-93a78c80-945e-11eb-8eb0-38d102603595.png)
