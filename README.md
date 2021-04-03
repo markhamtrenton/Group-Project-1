@@ -1,7 +1,9 @@
-#Group-Project-1 
 OddJobs
-Come and find all type of Odd Jobs around your local area. Submit a bid and stay active.
+Description
+Come and find all type of Odd Jobs around your local area. Submit a bid and stay active. App targets construction companies or small crews looking to find jobs or build reputation helping other businesses in the local area. 
+
 Repo:
+
 Live site:
 
 Screenshots
