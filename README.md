@@ -7,8 +7,7 @@ Repo:
 Live site:
 
 Screenshots
-deploy link: https://markhamtrenton.github.io/Group-Project-1/
-![wireframe](https://user-images.githubusercontent.com/77074964/112418127-4eb58480-8cff-11eb-8845-bdc00082ac2f.jpg)
+deploy link: file:///C:/Users/chand/Desktop/odwireframe.pdf
 
 Regristration Screen
 ![image](https://user-images.githubusercontent.com/78390228/113467254-e27a0580-940f-11eb-8e48-d496ac2d8c0c.png)
