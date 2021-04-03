@@ -7,7 +7,8 @@ Repo:
 Live site:
 
 Screenshots
-deploy link: file:///C:/Users/chand/Desktop/odwireframe.pdf
+deploy link: ![image](https://user-images.githubusercontent.com/78390228/113479711-93a78c80-945e-11eb-8eb0-38d102603595.png)
+
 
 Regristration Screen
 ![image](https://user-images.githubusercontent.com/78390228/113467254-e27a0580-940f-11eb-8e48-d496ac2d8c0c.png)
