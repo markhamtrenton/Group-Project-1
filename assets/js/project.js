@@ -48,8 +48,9 @@ async function submitBid(){
       //set new current bid
       newAllBidObjects["projectID" + projectID] = bidObject;
       //write new allbidobjects to local storage
-      localStorage.setItem("allBidObjects", JSON.stringify(allBidObjects));
+      localStorage.setItem("allBidObjects", JSON.stringify(newAllBidObjects));
     }
+    window.location.reload();
 };
 
 function loadCurrentBidObject()
@@ -171,4 +172,3 @@ function loadPage(){
 };
 
 loadPage();
-checkValidCompany();
